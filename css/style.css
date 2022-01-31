@@ -51,8 +51,14 @@ a {
 	display: none;
 }
 
-/* Show nested dropdown */
+@media (max-width: 600px) {
+	.nav-item,
+	.dropdown-item {
+		display: block;
+	}
+}
 
+/* Show nested dropdown */
 .nav-item:hover .dropdown {
 	display: block;
 	position: absolute;
@@ -69,6 +75,13 @@ a {
 .nav-item:hover .dropdown-item:hover {
 	background-color: #e0e0e0;
 	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.nav-item:hover .dropdown {
+		width: 100%;
+		position: relative;
+	}
 }
 
 /* Spans */

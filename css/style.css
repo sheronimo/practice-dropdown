@@ -21,3 +21,34 @@ ul {
 a {
 	text-decoration: none;
 }
+
+/* MENU */
+
+.navbar,
+.nav-link,
+.dropdown-link {
+	color: #333;
+}
+
+.nav-item,
+.dropdown-item {
+	display: inline-block;
+	padding: 1rem;
+	position: relative;
+}
+
+.nav-item:hover,
+.dropdown-item:hover {
+	cursor: pointer;
+	background-color: navy;
+	color: white;
+}
+
+.nav-link:hover,
+.dropdown-link:hover {
+	color: white;
+}
+
+.dropdown {
+	display: none;
+}
